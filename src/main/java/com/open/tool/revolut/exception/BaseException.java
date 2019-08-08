@@ -1,6 +1,6 @@
 package com.open.tool.revolut.exception;
 
-public class BaseException extends Exception {
+public abstract class BaseException extends Exception {
 
     private int status;
 

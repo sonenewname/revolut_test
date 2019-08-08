@@ -44,7 +44,7 @@ public class SparkBase {
         AccountController accountController = injector.getInstance(AccountController.class);
         OperationController operationController = injector.getInstance(OperationController.class);
         Router r = new Router(accountController, operationController);
-        r.init(8090);
+        r.init(port);
 
         awaitInitialization();
     }
